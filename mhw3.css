@@ -1,0 +1,612 @@
+body{
+    margin: 0;
+}
+@media(max-width:500px){
+    body{
+        font-size:14px;
+    }
+}
+
+header {
+    color: white;
+    background-image: url("img/louvre.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+@media (max-width: 500px){
+    header{
+        height: 500px;
+    } 
+
+}
+
+
+  #titolo{
+    color:  white;
+    position: relative;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 55px;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3em;
+    max-width: 700px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    z-index: 1;
+
+  }
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.3 );
+    position: absolute;
+    top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+ }
+    #profile img{
+        display: flex;
+
+        height: 100px;
+        width: 100px;
+
+        margin-top: -54px;
+        margin-left: auto;
+        margin-right: auto;
+         border-radius: 50px;
+
+        position: relative;
+        z-index: 1;
+        background-color: rgba(230, 229, 214, 0.8);
+        
+    } 
+
+    #name-container  {
+        display: flex;
+        justify-content: center;
+        font-size:  1.2em;
+        margin: 5px;
+    }
+    
+  nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+  
+    font-family: 'Merriweather Sans', serif;
+    font-size: 1em;
+    padding: 20px;
+    
+    height:  10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 3;
+}
+
+#links a {
+    margin: 20px;
+    padding: 10px 10px;
+    color: white;
+  }
+
+  a.button{
+    border: 1.5px solid white;
+    border-radius: 100px;
+  }
+ a.button:hover{
+     background-color: #e0e0e08c;
+  
+ }
+ #simartists.hidden, #discover.hidden{
+     display: none;
+ }
+
+
+    
+
+#menu{
+    display: none;
+}
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 15px;    
+}
+
+
+@media (max-width:500px){
+   
+
+    #links{
+        display: none;
+    }
+    #links a{
+        margin: 15px;
+    }
+
+    #menu{
+        display: block;
+    }
+}
+  section{
+      /* background-color: rgba(172, 167, 167, 0.377); */
+      /* display: flex;
+      align-items: center;
+      flex-direction: column; */
+}
+
+
+
+.paragraph{
+    display: flex;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    
+}
+
+.opened_view{
+    display: flex;
+    width: 55%;
+    margin-left: 70px;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    
+}
+#ultimo{
+    margin-bottom:0px;
+}
+
+.numero{
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 0px;
+    width:fit-content;
+    font-family: 'Lora', serif;
+    font-size: 2.3em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.opera{
+  
+    display: flex;
+    flex-direction:column; 
+    margin-left: 20px;
+    margin-right:0px;
+    font-family: 'Merienda', serif;
+    
+}
+
+.nome-opera{
+    font-family: 'Lora', serif;
+    font-size: 2.3em;
+
+}
+
+@media(max-width: 500px){
+    .nome-opera{
+    font-size: 1.75em;
+}
+
+}
+.autore{
+    font-size: 1em;
+    font-family: 'Times New Roman', serif;
+    color:rgba(44, 2, 53);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: fit-content;
+ 
+ }
+ #amoreepsiche{
+    background-image: url("img/amoreepsiche.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+#GIOCONDA{
+    background-image: url("img/gioconda.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    height: 400px;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+  
+}
+#LIBERTA{
+    background-image: url("img/liberta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ZATTERA{
+    background-image: url("img/zattera.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+    height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#NIKE{
+    background-image: url("img/nike.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#VENERE{
+    background-image: url("img/veneremilo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+
+footer {
+
+    display: flex;
+
+    background-color: black;
+    padding: 3px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top:0px;
+    
+    align-items: center;
+
+    font-family: 'Merriweather Sans', serif;
+    color: grey;
+    z-index: 3;
+}
+#foot-title{
+
+    color:grey;
+}
+
+#foot-update{
+    font-size: 0.875em;
+}
+
+p{
+    line-height: 25px;
+    font-size: 1.2em;    
+    text-align: start;
+    color:rgba(0, 0, 0, 1);
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 500px){
+    .paragraph{
+        width:90%;
+    }
+    .numero{
+        font-size: 1.75em;
+        margin-right:10px;
+    }
+    .opera{
+        margin-left: 10px;;
+    }
+
+    p{
+    font-size: 0.9em;
+}
+    #amoreepsiche,#VENERE, #ZATTERA, #NIKE,#LIBERTA{
+        height: 300px;
+    }
+    #GIOCONDA{
+        height: 200px;
+    }
+
+
+}
+
+
+
+.dimensioni{
+    display: flex;
+    font-size: 1.1em;
+    color: rgb(187, 61, 3);
+    font-family: 'Lora', serif;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+.righello{
+    height: 35px;
+    width:35px;
+    background-image: url("img/ruler2.png");
+    background-size: cover;
+    margin-right: 6px;
+}
+
+@media (max-width: 500px){
+    .righello{
+        height: 20px;
+        width: 20px;
+        margin-right: 3px;
+    }
+        .dimensioni {
+        font-size: 0.875;
+    }
+}
+
+#logo{
+ display: flex;
+ margin-top:5px;
+ flex-direction: row;
+
+}
+
+#logo img{
+margin: 5px;
+height: 30px;
+width: 30px;
+background-color: black;
+
+}
+
+@media (max-width: 500px) {
+    footer{
+        height:100px;
+
+    }
+    
+    #logo img{
+        height: 20px;
+        width: 20px;
+    }
+    foot-update{
+        font-size: 0.5em;
+    }
+}
+
+
+/* --- mhw3 --- */
+
+#modal-view.hidden{
+    display: none;
+}
+
+
+  
+#modal-view{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#modal-view div{
+    font-size: 1em;
+    margin: 10px;
+    height: fit-content;
+    color:rgb(255, 255, 255);
+}
+#modal-view .titolo_nome{
+    font-size: 30px;
+} 
+#modal-view img{
+    max-width: 100%;
+    max-height: 100%;
+}
+ .no-scroll{
+     overflow: hidden;
+ }
+ #bio{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+#similarity{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+#similarity div{
+    height: 200px;
+    width: 200px;
+    border: #e0e0e0 solid 1px;
+    margin: 10px;
+    padding: 5px;   
+}
+ #biography, #name{
+    font-family: 'Merienda', serif;
+}
+#simartists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    border-radius: 100px;
+    background-color: #c7750a8c;
+}
+#simartists div{
+font-size: 18px;
+}
+#simartists img{
+height: 25px;
+width: 25px;
+padding: 3px;
+}
+#simartists:hover{
+background-color: #ecae5c8c
+}
+
+/*----------*/
+ .map img{
+     height: 50px;
+     width: 50px;
+ }
+ .map{
+     display: flex;
+     align-items: center;
+     max-width: fit-content;
+     font-size: 1.1em;
+     color: rgb(187, 61, 3);
+     font-family: 'Lora', serif;
+ }
+
+
+
+
+ #modal-view-right{
+    position:fixed;
+    top:50px;
+    right:0;
+    height: 100vh;
+    width: 400px;
+
+    background-color: #e0e0e08c;
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+ }
+ #modal-view-right.hidden{
+     display: none;
+ }
+
+ form{
+     margin-top: 30px;
+ }
+
+
+#contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid rgb(6, 55, 104);
+    padding: 5px;
+    width: 150px;
+    height: 180px;
+    font-family: 'Merriweather Sans', serif;
+    align-items: center;
+
+   
+}
+.content img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#ics-container{
+    display: flex;
+    justify-content: flex-end;
+   align-items: flex-end;
+   width: 100%;
+}
+#ics {
+   height: 20px;
+   width: 20px;
+   margin:5px;
+}
+#ics.hidden{
+   display: none;
+}
+#ics:hover{
+   background-color: rgb(226, 11, 11);
+}
+
+@media(max-width: 500px){
+#modal-view{
+    height: 100%;
+}
+#similarity div{
+    height: fit-content;
+    width: 150px;
+
+}
+#modal-view img{
+    display: none;
+}
+ #modal-view div{
+   font-size: 15px;
+} 
+
+}
+
+#query{
+    font-size: 1.1em;
+    color:rgb(6, 55, 104);
+    font-family: 'Lora', serif;
+}
